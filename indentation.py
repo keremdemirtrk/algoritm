@@ -1,3 +1,4 @@
+#Dosya girintileme Writed by Kerem Demirturk
 fileObjectRead = open('source.c', 'r+')
 lines = fileObjectRead.readlines()
 fileObjectRead.close()
@@ -6,7 +7,7 @@ fileObjectRead.close()
 
 tabCount = 0
 
-fileObjectWrite = open('source2.c', 'w')
+fileObjectWrite = open('source2.c', 'w') # aynı dosyaya kaydedilsin istenirse source.c ile değiştirebilirsiniz.
 for line in lines:
 	if '}' in line:
 		tabCount -= 1
